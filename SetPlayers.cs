@@ -21,6 +21,7 @@ namespace TaskGame2
                 {
                     Console.WriteLine("Sorry, there's too many or too little of you.");
                     GiveAnswer();
+                    break;
                 }
                 else if (Enumerable.Range(2, 10).Contains(actNumber))
                 {
@@ -30,6 +31,7 @@ namespace TaskGame2
                 {
                     Console.WriteLine("You should enter a number of players.");
                     GiveAnswer();
+                    break;
                 }
             }
             return actNumber;

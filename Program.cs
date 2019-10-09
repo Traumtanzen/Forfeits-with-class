@@ -16,6 +16,7 @@ namespace TaskGame2
             int PlrsNmbr = SetPlayers.PlayersNr();
             List<string> PlrsNames = SetPlayers.PlayersNames(PlrsNmbr);
             PlayRound(PlrsNmbr, PlrsNames);
+            Console.ReadLine();
         }
         static void PlayRound(int number, List<string> players)
         {
