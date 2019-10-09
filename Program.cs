@@ -25,7 +25,7 @@ namespace TaskGame2
 
             while (true)
             {
-                Console.WriteLine("If you want to to see the names of all players, press 'p'; if you want to play, press any key; if you want to end the game, press 'q'");
+                Console.WriteLine("press \"p\" to see the players, press \"q\" to quit or press any other key to play round");
                 string ans = Console.ReadLine();
                 if (ans == "q")
                 {
@@ -37,7 +37,7 @@ namespace TaskGame2
                     {
                         Console.WriteLine(players[i]);
                     }
-                else Console.WriteLine($"So, {players[rnd.Next(players.Count)]} should {quests[rnd.Next(quests.Length)]}!");
+                else Console.WriteLine($"Ok, {players[rnd.Next(players.Count)]}, here's your task: {quests[rnd.Next(quests.Length)]}!");
             }
         }
     }
